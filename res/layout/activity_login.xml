@@ -6,7 +6,7 @@
     tools:context=".LoginActivity" >
 
     <!-- Login progress -->
-    <!--TODO:需要修改布局-->
+    <!--TODO:Need to modify the layout-->
     <LinearLayout
         android:id="@+id/login_status"
         android:visibility="gone"
@@ -25,7 +25,6 @@
         <TextView
             android:id="@+id/login_status_message"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:fontFamily="sans-serif-light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -91,11 +90,12 @@
                     android:id="@+id/sign_in_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="right"
                     android:layout_marginTop="16dp"
-                    android:text="登录"
                     android:paddingLeft="32dp"
                     android:paddingRight="32dp"
-                    android:layout_gravity="right" />
+                    android:text="Login" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -112,11 +112,11 @@
 
                     <TextView
                         android:id="@+id/login_password"
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="15dp"
-                        android:text="找回密码"
-                        android:layout_weight="2.09" />
+                        android:layout_weight="2.09"
+                        android:text="Forgot Password" />
 
                     <TextView
                         android:layout_height="wrap_content"
@@ -127,12 +127,13 @@
 
                     <TextView
                         android:id="@+id/login_register"
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="15dp"
-                        android:text="注册账号"
                         android:layout_weight="2.09"
-                        android:onClick="true" />
+                        android:onClick="true"
+                        android:text="Register an account" />
+
                 </LinearLayout>
             </LinearLayout>
 
